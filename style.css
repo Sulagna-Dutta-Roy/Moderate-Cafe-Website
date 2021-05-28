@@ -1,0 +1,213 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+}
+button {
+	font-family: 'Poppins', sans-serif;
+}
+header {
+	justify-content: space-evenly;
+	display: flex;
+	width: 90%;
+	height: 10vh;
+	align-items: center;
+    background-color: #fff;
+}
+.logo-container,
+.nav-links,
+.blank{
+	display: flex;
+}
+
+.logo-container {
+	flex: 1;
+}
+.logo {
+	font-weight: 600;
+	font-size: 23px;
+	margin: 5px;
+}
+nav {
+	flex: 2;
+}
+.nav-links {
+	justify-content: space-around;
+	list-style: none;
+	
+}
+.nav-link {
+	color: #6d6767;
+	font-size: 22px;
+	text-decoration: none;
+}
+.nav-link:hover{
+	color: skyblue;
+}
+.presentation {
+	display: flex;
+	width: 90%;
+	margin: auto;
+	min-height: 90vh;
+	align-items: center;
+}
+.introduction {
+	flex: 1;
+}
+.intro-text h1 {
+	font-size: 44px;
+	font-weight: 500;
+	background: linear-gradient(#000);
+}
+.intro-text p {
+	margin-top: 5px;
+	font-size: 22px;
+	color: #0f0e2c;
+}
+
+.cta {
+	padding: 50px 0px 0px 0px;
+}
+.cta-select {
+	border: 2px solid rgb(113, 113, 219);
+	color: #000;
+	width: 150px;
+	height: 50px;
+	cursor: pointer;
+	font-size: 18px;
+    background-color: dodgerblue;
+}
+.but{
+	text-decoration: none;
+	color: rgb(18, 20, 44);
+}
+.but:hover{
+	color: royalblue;
+}
+.cover {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	height: 60vh;
+	 
+}
+.cover img {
+	height: 100%;
+	filter: drop-shadow(0px 10px 6px rgb(18, 20, 44));
+	animation: drop 1.5s ease;
+}
+
+.delivery{
+    background: #fff;
+    text-align: center;
+}
+.delivery h1{
+    margin-top: 50px;
+}
+.box{
+    display: flex;
+    margin-top: 40px;
+}
+.box1{
+    padding-right: 60px;
+    padding-left: 90px;
+    
+}
+.box2{
+    padding-right: 60px;
+    padding-left: 90px;
+}
+.box3{
+    padding-right: 60px;
+    padding-left: 90px;
+}
+/*-----------------------------------------*/
+#contact
+{
+    padding-top: 150px;
+    color: #777;
+}
+.contact .container h1{
+    text-align: center;
+}
+.contact-form
+{
+    padding: 25px;
+}
+.form-control
+{
+    border-radius: 0 !important;
+    border: none !important;
+}
+::placeholder
+{
+    color: #999 !important;
+}
+.follow
+{
+    background: #fff;
+    padding: 15px;
+    margin: 15px;
+}
+.contact-info .fa
+{
+    margin: 10px;
+    color: #007bff;
+    font-weight: bold;
+}
+.contact-info p
+{
+    color: black;
+    font-size: 30px;
+}
+.footer {
+    padding-top: 3px;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+}
+
+
+
+@keyframes drop {
+	0% {
+		opacity: 0;
+		transform: translateY(-100px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.presentation {
+		flex-direction: column;
+	}
+	.introduction {
+		margin-top: 5vh;
+		text-align: center;
+	}
+	.intro-text h1 {
+		font-size: 30px;
+	}
+	.intro-text p {
+		font-size: 18px;
+	}
+	.cta {
+		padding: 10px 0px 0px 0px;
+	}
+    .delivery .box{
+        flex-direction: column;
+        padding: 5px;
+    }
+    .contact .container .row{
+        text-align: center;
+    }
+	.cover img {
+		height: 80%;
+	}
+}
